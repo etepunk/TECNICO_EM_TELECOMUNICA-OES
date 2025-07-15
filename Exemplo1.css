@@ -26,47 +26,155 @@
     font-style: normal;
 }
 
-body {
-    background-image: url('imagens/ATENDIMENTO.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    font-family: 'VivoType', Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+/* Ambas as seções ficam alinhadas à direita */
+.topo-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    flex-wrap: wrap; /* ajuda com responsividade em telas pequenas */
 }
 
+/* Agrupa título + subtítulo à esquerda */
+.bloco-esquerda {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* espaço entre os blocos */
+}
+
+/* Título */
+.titulo {
+    background-color: #AC8C54;
+    color: white;
+    text-align: left;
+    padding: 12px 16px;         /* diminuído */
+    font-weight: bold;
+    font-size: 1.4rem;          /* um pouco menor */
+    border-radius: 14px;         /* mais sutil */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
+    margin: 0;
+    max-width: 600px;         /* limite de largura */
+    width: 100%;
+}
+
+/* Subtítulo */
+.subtitulo {
+    background-color: #000;
+    color: white;
+    text-align: left;
+    padding: 10px 16px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    border-radius: 14px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+    margin: 0;
+    max-width: 700px;         /* limite de largura */
+    width: 100%;
+}
+
+/* Texto explicativo */
+.txt {
+    background-color: #000;
+    color: #fff;
+    text-align: left;
+    padding: 8px 14px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+    margin: 10px auto 0 auto;
+    max-width: 600px;
+    width: 100%;
+    line-height: 1.4;
+}
+
+.txt p {
+    margin: 0;
+}
+
+/* Logo */
+.logo-direita {
+    height: 60px;
+    width: auto;
+    vertical-align: middle;     
+    align-self: flex-start;     
+}
+
+
+.logos-inferior {
+    display: flex;
+    justify-content: flex-end; /* Alinha os itens no fim (direita) */
+    padding: 10px 30px;         /* Espaço interno com margem lateral direita */
+}
+/* Camada da imagem de fundo */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+    /* Altura controlada */
+    height: 100vh; /* ou 90vh se quiser deixar uma barrinha embaixo */
+
+    background-image: url('imagens/imagem_final.PNG');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; /* 👈 muda de cover para contain */
+    
+    z-index: -1;
+    pointer-events: none; /* evita que ela interfira com cliques */
+}
+
+
+/* Remove background do body agora */
+body {
+    font-size: 16px;
+    padding: 10px;
+    font-family: 'VivoType', Arial, sans-serif;
+    margin: 0;
+}
+
+/* Bloco central com transparência */
+.container.bloco-central {
+    max-width: 800px;
+    /*max-height: 90vh; /* cabe na tela */
+    background: rgba(255, 255, 255, 0.85);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 30px 40px 0 40px;
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsividade */
+@media (min-width: 600px) {
+    body {
+        font-size: 18px;
+        padding: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        font-size: 20px;
+        padding: 30px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .bloco-central {
+        margin-left: 200px;
+        margin-right: auto;
+    }
+}
+
+
+/* Tipografia */
 h1 {
     font-weight: 700;
-    /* bold */
 }
 
 p.lead {
     font-weight: 300;
-    /* light */
 }
 
-.cta {
-    font-weight: 500;
-    /* medium */
-}
-
-.container {
-    max-width: 700px;
-    margin: 50px auto;
-    background: rgba(255, 255, 255, 0.85);
-    /*ajuste de transparencia*/
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
-
-    /*deslocamento*/
-    transform: translateX(700px);
-}
-
-.cta {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-top: 20px;
-}
