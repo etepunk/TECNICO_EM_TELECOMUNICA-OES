@@ -1,0 +1,68 @@
+@font-face {
+  font-family: 'VivoType';
+  src: url('Fonte VivoType/TTF/VivoTypeLight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'VivoType';
+  src: url('Fonte VivoType/TTF/VivoTypeRegular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'VivoType';
+  src: url('Fonte VivoType/TTF/VivoTypeMedium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'VivoType';
+  src: url('Fonte VivoType/TTF/VivoTypeBold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  background-image: url('imagens/TI.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  font-family: 'VivoType', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-weight: 700; /* bold */
+}
+
+p.lead {
+  font-weight: 300; /* light */
+}
+
+.cta {
+  font-weight: 500; /* medium */
+}
+
+.container {
+  max-width: 700px;
+  margin: 50px auto;
+  background: rgba(255, 255, 255, 0.40); /*ajuste de transparencia*/
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+
+  /*deslocamento*/
+  transform: translateX(-700px);
+}
+
+.cta {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 20px;
+}
