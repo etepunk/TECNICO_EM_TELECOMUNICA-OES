@@ -157,7 +157,7 @@
     /* Altura controlada */
     height: 100vh; /* ou 90vh se quiser deixar uma barrinha embaixo */
 
-    background-image: url('imagens/imagem_final.PNG');
+    background-image: url('imagens/imagem_final.png');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover; /* 👈 muda de cover para contain */
