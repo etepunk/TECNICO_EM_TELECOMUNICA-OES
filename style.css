@@ -58,8 +58,7 @@
     width: 100%;
 }
 
-/* Subtítulo */
-.subtitulo {
+.comple {
     background-color: #000;
     color: white;
     text-align: left;
@@ -75,14 +74,14 @@
 
 /* Texto explicativo */
 .txt {
-    background-color: #000;
-    color: #fff;
+    background: rgba(255, 255, 255, 0.85);
+    color: #000;
     text-align: left;
     padding: 8px 14px;
     font-weight: 500;
     font-size: 0.95rem;
     border-radius: 10px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.1);
     margin: 10px auto 0 auto;
     max-width: 600px;
     width: 100%;
@@ -184,7 +183,7 @@ body {
     background: rgba(255, 255, 255, 0.85);
     padding: 20px;
     border-radius: 10px;
-    margin: 30px auto; /* Centraliza horizontalmente */
+    margin: 10px auto 0 auto;
     box-shadow: 0 0 80px rgba(0, 0, 0, 0.1);
 }
 
